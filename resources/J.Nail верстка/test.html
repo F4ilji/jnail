@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <title>Multiple Select Example</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/storage/css/style.css">
+</head>
+<body>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <select class="js-example-basic-multiple" name="states[]" multiple="multiple">
+        <option value="AL">Alabama</option>
+        <option value="WY">Wyoming</option>
+        <option value="WY">fsafsafafs</option>
+      </select>
+      <select class="js-example-basic-multiple" name="states[]">
+        <option value="AL">Alabama</option>
+        <option value="WY">Wyoming</option>
+        <option value="WY">fsafsafafs</option>
+      </select>
+      <h1>Форма записи</h1> <br>
+  
+      <form action="#">
+        <input type="text" placeholder="Имя"> <br> <br>
+        <input type="text" placeholder="Фамилия"> <br> <br>
+        <input type="text" placeholder="Телефон"> <br> <br>
+        <input type="submit" value="Отправить">
+  
+      </form>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.js-example-basic-multiple').select2();
+    });
+  </script>
+</body>
+</html>
+
+
+
+
